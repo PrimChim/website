@@ -108,9 +108,9 @@
                             <img src="assets/imgs/pencil-case.svg"
                                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
                                 class="icon">
-                            <h6 class="title">Adipisicing</h6>
-                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
-                                molestias dolorem iste quod.</p>
+                            <h6 class="title">Designing</h6>
+                            <p class="subtitle">I masterfully manipulate images, create captivating compositions, and
+                                flawlessly retouch photos.</p>
                         </div>
                     </div>
                 </div>
@@ -120,9 +120,10 @@
                             <img src="assets/imgs/responsive.svg"
                                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
                                 class="icon">
-                            <h6 class="title">Sapiente</h6>
-                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
-                                molestias dolorem iste quod.</p>
+                            <h6 class="title">Web Development</h6>
+                            <p class="subtitle">I am capable of forntend
+                                and backend development using technologies like HTML, CSS, JavaScript, Django & MySQL.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -224,21 +225,23 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto"
-                onsubmit="sendEmail(); reset(); return false;">
+            <form class="contact-form col-md-10 col-lg-8 m-auto" action="https://formsubmit.co/omee3579@gmail.com"
+                method="POST">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" name="name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" id="email" requried>
+                        <input type="email" class="form-control" placeholder="Enter Email" name="email" requried>
                     </div>
                     <div class="form-group col-sm-12">
                         <textarea name="comment" id="comment" rows="6" class="form-control"
-                            placeholder="Write Something" id="message"></textarea>
+                            placeholder="Write Something" name="body"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                        <button type="submit" class="btn btn-outline-primary rounded">Send
+                            Message</button>
+                        <!-- <input type="submit" value="Send Message" class="btn btn-outline-primary rounded"> -->
                     </div>
                 </div>
             </form><!-- end of contact form -->
@@ -274,22 +277,6 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "omee3579@gmail.com",
-                Password: "332FCE2F95F80FA6CCCC04CC52B354B0FFF8",
-                To: 'gpritam922@gmail.com',
-                From: document.getElementById("email").value,
-                Subject: "Website Email alert",
-                Body: document.getElementById("message").value
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>
 
 </body>
 
